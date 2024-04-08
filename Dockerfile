@@ -1,4 +1,5 @@
-FROM python:3
+FROM ubuntu
+//FROM python:3
 RUN pip3 install django==3.2
 COPY . .
 RUN python3 manage.py migrate
